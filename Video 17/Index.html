@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+         /* Element Selector  */
+        /* div {
+            background-color: black;
+            color: red;
+        } */
+
+        /* Class Selector */
+
+        .red {
+            background-color: black;
+            color: red;
+        }
+
+        /* Id Selector */
+         #black {
+            background-color: blue;
+            color: yellow;
+        } 
+
+        /* Child Selector */
+         div > p {
+            background-color: black;
+            color: red;
+        } 
+
+        /* Descendant Sellector */
+         div p {
+            background-color: black;
+            color: red;
+        } 
+
+        /* Universal Sellector */
+        * {
+            margin: 200;
+            padding: 255;
+        }
+
+        /* pseudo Sellector  */
+        a:visited {
+            color: yellow;
+        }
+        a:link {
+            color: green;
+        }
+        a:active {
+            background-color: black;
+        }
+
+        a:hover {
+            background-color: dimgrey;
+        }
+
+           p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+     <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am a div
+        <p>I am a Child Selector</p>
+    </div>
+
+    <div id="black">
+        I am another div
+    </div>
+
+        <div>
+        <span>
+            <p>I am a Descendant Sellector</p>
+        </span>
+    </div>
+
+    <a href="https://www.youtube.com/">Go to youtube</a>
+    <a href="https://www.google2.com/">Go to google</a>
+
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1cEG1T8beO4?si=0Ue_NV5Xl7cHBTFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+
+    <a href="https://www.codewithharry.com/tutorial/css-selectors">Explain</a>
+
+</body>
+
+</html>
